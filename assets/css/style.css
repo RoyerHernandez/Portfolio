@@ -1048,7 +1048,7 @@ section {
   font-size: 14px;
   position: fixed;
   left: 0;
-  bottom: 0;
+  /*  bottom: 0;*/
   width: 300px;
   z-index: 9999;
   background: #040b14;
@@ -1056,12 +1056,13 @@ section {
 
 #footer .copyright {
   text-align: center;
+  font-size: 8px;
 }
 
 #footer .credits {
   padding-top: 5px;
   text-align: center;
-  font-size: 13px;
+  font-size: 8px;
   color: #eaebf0;
 }
 
