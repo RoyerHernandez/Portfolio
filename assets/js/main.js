@@ -142,6 +142,11 @@
   }
 
   /**
+   * Change the Language
+   */
+  
+
+  /**
    * Skills animation
    */
   let skilsContent = select('.skills-content');

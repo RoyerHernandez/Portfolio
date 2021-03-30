@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Royer Hernández || Portfolio - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -35,7 +37,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body >
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
@@ -52,19 +54,22 @@
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="https://www.linkedin.com/in/royer-alfonso-hernandez-morales-61424156" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/royer-alfonso-hernandez-morales-61424156" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#about" class="nav-link scrollto" onclick="changeLanguage('es')" ><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Portfolio</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          <li><a href="./assets/RoyerHernandez_HojadeVida.pdf" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Hoja de Vida</span></a></li>
+          <li><a href="./assets/RoyerHernandez_HojadeVida.pdf" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+              <span>Hoja de Vida</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -74,57 +79,91 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Royer Hernández</h1>
-      <p>Soy <span class="typed" data-typed-items="Especialista en Ingenieria de Software, Ingeniero de Sistemas, Desarrollador Web, Scrum Master"></span></p>
+      <p>Soy <span class="typed"
+          data-typed-items="Especialista en Ingenieria de Software, Ingeniero de Sistemas, Desarrollador Web, Scrum Master"></span>
+      </p>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" >
       <div class="container">
 
-        <div class="section-title">
-          <h2>Acerca de mi.</h2>
-          <p>• Ingeniero de Software con amplia experiencia en la sistematización de procesos análisis, diseño, construcción e implementación de desarrollos de software FullStack, desarrollo de procedimientos de almacenado, Paquetes de integración (ETL), análisis de consultas Transact-SQL Server y Oracle y análisis de información BI, amplia capacidad de desempeño interdisciplinario en el campo tecnológico, administrativo y social, con fácil interpretación de las políticas organizacionales.
-            <br>
-            <br>
-            • Persona seria, de excelentes relaciones interpersonales y habilidad para trabajar en equipo o individualmente con alto grado de responsabilidad, interés por la actualización profesional.
-            </p>
+        <div class="switch-content">          
+          <label class="switch" id="switchEng">          
+            <input type="checkbox" onclick="changeLanguage('eng')"  checked >
+            <span class="slider round"></span>             
+          </label>
+          <h6 id="engVer">   English Version</h6> 
         </div>
+        <div class="switch-content">          
+          <label class="switch" id="switchEs" >          
+            <input type="checkbox" onclick="changeLanguage('es')" checked >
+            <span class="slider round"></span>          
+          </label> 
+          <h6 id="spaVer">   Spanish Versión</h6>
+        </div>      
+        <br>
+        <br>
+            <!-- Define the content of the page 
+              that would be changed -->            
+            <div class="section-title">
+              <h2> <p  id="aboutContent">Acerca de mi.</p>  </h2>              
+              <p id="siteContent">Ingeniero de Software con amplia experiencia en la sistematización de procesos análisis, diseño,
+                construcción e implementación de desarrollos de software FullStack, desarrollo de procedimientos de
+                almacenado, Paquetes de integración (ETL), análisis de consultas Transact-SQL Server y Oracle y análisis
+                de información BI, amplia capacidad de desempeño interdisciplinario en el campo tecnológico,
+                administrativo y social, con fácil interpretación de las políticas organizacionales.
+                Persona seria, de excelentes relaciones interpersonales y habilidad para trabajar en equipo o
+                individualmente con alto grado de responsabilidad, interés por la actualización profesional.
+              </p>
+            </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Desarrollador Web .Net || FullStack <br> &amp; Scrum Master Certified. 
-            </h3>
-            <p class="font-italic">
-              Amplia experiencia en desarrollo de aplicaciones Web, Servicios Web, API, Windows Forms y Mobile en entornos de desarrollo Visual Studio .Net y .Net Core.
-            </p>
             <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>20 Ene 1984</span></li>                  
-                  <li><i class="bi bi-chevron-right"></i> <strong>Telefonos:</strong> <span>+57 3183591891 - 0314822204</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Bogotá, Colombia</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span>www.linkedin.com/in/royer-alfonso-hernandez-morales-61424156</span></li>
-                </ul>
+              <div class="col-lg-4" data-aos="fade-right">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>37</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Titulo:</strong> <span>Especialista en Ingenieria de Software</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ing.royerhernandez@gmail.com </span></li>
-                </ul>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3> <p  id="aboutContent_description">Desarrollador Web .Net || Desarrollador FullStack <br> &amp; Scrum Master Certified.
+                </p></h3>
+                <p class="font-italic">
+                  Amplia experiencia en desarrollo de aplicaciones Web, Servicios Web, API, Windows Forms y Mobile en
+                  entornos de desarrollo Visual Studio .Net y .Net Core.
+                </p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>20 Ene
+                          1984</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Telefonos:</strong> <span>+57 3183591891 -
+                          0314822204</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Bogotá, Colombia</span>
+                      </li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span> <a
+                            href="https://www.linkedin.com/in/royer-alfonso-hernandez-morales-61424156">www.linkedin.com/in/royer-alfonso-hernandez-morales-61424156</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>37</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Titulo:</strong> <span>Especialista en Ingenieria
+                          de Software</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ing.royerhernandez@gmail.com
+                        </span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>
+                  Principales áreas de interés enfocadas al, Desarrollo de Software, Análisis y Diseño de Base de Datos
+                  relacionales y no relacionales, Análisis y Gestión de proyectos , conocimientos basados en las
+                  técnicas de gerencia empresarial e ingeniería de software con excelentes resultados en los últimos
+                  semestres de carrera.
+                </p>
               </div>
             </div>
-            <p>
-              Principales áreas de interés enfocadas al, Desarrollo de Software, Análisis y Diseño de Base de Datos relacionales y no relacionales, Análisis y Gestión de proyectos , conocimientos basados en las técnicas de gerencia empresarial e ingeniería de software con excelentes resultados en los últimos semestres de carrera. 
-            </p>
-          </div>
-        </div>
 
       </div>
     </section><!-- End About Section -->
@@ -134,17 +173,23 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Herramientas</h2>
-          <p>lenguajes de programación C#, Visual Basic .NET, Java ,consultas Transact-SQL Server y Oracle, desarrollo de paquetes de integración (ETL), procedimientos de almacenado, programación JavaScript, programación WEB HTML5, suit Microsoft Office (Access y Excel Avanzado), Microsof Dynamics CRM, Visual Fox, Administración de Bases de Datos Oracle, SQL server y Mysql, conocimientos en modelos de desarrollo basados en Blazor, Razor Pages, MVC, Capas , construcción de sistemas de información empresariales, diseño de bases de datos relacionales.</p>
+          <h2> <p id="toolsContent"> Herramientas</p></h2>
+          <p>lenguajes de programación C#, Visual Basic .NET, Java ,consultas Transact-SQL Server y Oracle, desarrollo
+            de paquetes de integración (ETL), procedimientos de almacenado, programación JavaScript, programación WEB
+            HTML5, suit Microsoft Office (Access y Excel Avanzado), Microsof Dynamics CRM, Visual Fox, Administración de
+            Bases de Datos Oracle, SQL server y Mysql, conocimientos en modelos de desarrollo basados en Blazor, Razor
+            Pages, MVC, Capas , construcción de sistemas de información empresariales, diseño de bases de datos
+            relacionales.</p>
         </div>
-  <!--
-        <div class="row no-gutters">
+        
+        <!-- <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="1">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
+              <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong> ACTUALIZACION PROFESIONAL
+                </strong> 3 Certificaciones y 2 Seminarios de Profundización</p>
             </div>
           </div>
 
@@ -172,8 +217,8 @@
             </div>
           </div>
 
-        </div>
-      -->
+        </div> -->
+     
       </div>
     </section><!-- End Facts Section -->
 
@@ -182,8 +227,13 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Habilidades</h2>
-          <p>Habilidades de desarrollo en lenguajes de programación como C#, Visual Basic .NET, Java ,consultas Transact-SQL Server y Oracle, desarrollo de paquetes de integración (ETL), procedimientos de almacenado, programación JavaScript, programación WEB, suit Microsoft Office (Access y Excel Avanzado), Microsof Dynamics CRM, Visual Fox, Administración de Bases de Datos Oracle, SQL server y Mysql, conocimientos en modelos de desarrollo basados en Blazor, Razor Pages, MVC, Capas , construcción de sistemas de información empresariales, diseño de bases de datos relacionales.</p>
+          <h2> <p id="skillsContent" > Habilidades </p></h2>
+          <p>Habilidades de desarrollo en lenguajes de programación como C#, Visual Basic .NET, Java ,consultas
+            Transact-SQL Server y Oracle, desarrollo de paquetes de integración (ETL), procedimientos de almacenado,
+            programación JavaScript, programación WEB, suit Microsoft Office (Access y Excel Avanzado), Microsof
+            Dynamics CRM, Visual Fox, Administración de Bases de Datos Oracle, SQL server y Mysql, conocimientos en
+            modelos de desarrollo basados en Blazor, Razor Pages, MVC, Capas , construcción de sistemas de información
+            empresariales, diseño de bases de datos relacionales.</p>
         </div>
 
         <div class="row skills-content">
@@ -193,31 +243,35 @@
             <div class="progress">
               <span class="skill">C# || Asp .Net - .Net Core<i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
-            </div>      
-            
+            </div>
+
             <div class="progress">
               <span class="skill">JavaScript <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">HTML <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">CSS <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
-            
+
 
           </div>
 
@@ -226,23 +280,26 @@
             <div class="progress">
               <span class="skill">Java <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">SQL <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
             </div>
 
             <div class="progress">
               <span class="skill">PL/SQL <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
               </div>
-            </div>            
+            </div>
 
           </div>
 
@@ -256,7 +313,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Experiencia Laboral</h2>
+          <h2> <p id="workExpContent"> Experiencia Laboral </p></h2>
           <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
         </div>
 
@@ -265,7 +322,11 @@
             <h3 class="resume-title">Resumen</h3>
             <div class="resume-item pb-0">
               <h4>Royer Hernández</h4>
-              <p><em>Ingeniero de Software con amplia experiencia en la sistematización de procesos análisis, diseño, construcción e implementación de desarrollos de software FullStack, desarrollo de procedimientos de almacenado, Paquetes de integración (ETL), análisis de consultas Transact-SQL Server y Oracle y análisis de información BI, amplia capacidad de desempeño interdisciplinario en el campo tecnológico, administrativo y social, con fácil interpretación de las políticas organizacionales.</em></p>
+              <p><em>Ingeniero de Software con amplia experiencia en la sistematización de procesos análisis, diseño,
+                  construcción e implementación de desarrollos de software FullStack, desarrollo de procedimientos de
+                  almacenado, Paquetes de integración (ETL), análisis de consultas Transact-SQL Server y Oracle y
+                  análisis de información BI, amplia capacidad de desempeño interdisciplinario en el campo tecnológico,
+                  administrativo y social, con fácil interpretación de las políticas organizacionales.</em></p>
               <ul>
                 <li>Bogotá, Colombia</li>
                 <li>+57 3183591891 - 0314822204</li>
@@ -308,7 +369,7 @@
               <p><em>(PLATZI) || 2019</em></p>
               <h5>Curso de Desarrollo Web con Blazor y .NET </h5>
               <p><em>(PLATZI) || 2020</em></p>
-              <h5>Curso de C# con .NET CORE   </h5>
+              <h5>Curso de C# con .NET CORE </h5>
               <p><em>(PLATZI) || 2020</em></p>
               <h5>Web Apps y Logic Apps en AZURE</h5>
               <p><em>(PLATZI) || 2020</em></p>
@@ -327,8 +388,8 @@
               <h5>Administración de Sistemas de Información Y Redes de Computo</h5>
               <p><em>Escuela Colombiana de Carreras Industriales (ECCI) , Bogotá</em></p>
 
-            </div>            
-            
+            </div>
+
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Experiencia Profesional</h3>
@@ -338,22 +399,40 @@
               <p><em>SERVIENTREGA - DAR AYUDA, Bogotá, Colombia </em></p>
               <ul>
                 <h5>Sistematización de procesos análisis, diseño, construcción e implementación</h5>
-                <li>Diseño, desarrollo, implementación y aseguramiento de proyectos de software, Sitios Web, Servicios Web (WS – WCF), API y Aplicaciones Mobiles, enfocados en la sistematización de las necesidades descritas en las historias de usuario asignadas a la cadena de valor.</li>
-                <li>Participar en la contextualización realizada por Gestión de la Demanda en la etapa de    levantamiento de información, análisis integral y elaboración de requerimientos. </li>
-                <li>Generar propuestas de mejoras a los sistemas actuales teniendo en cuenta que se puedan integrar con otros existentes o ya desarrollados, a nivel Procesos, Macro procesos, Organización, Corporación y Clientes.</li>
-                <li>Documentar el diseño de sistemas con su respectiva definición de estructura, registros y demás estándares de diseño establecidos en la metodología de desarrollo de proyectos de software de SERVIENTREGA S.A.</li>
-                <li>Mantener al 100% bajo control el código fuente de las soluciones en las que participa a nivel de la aplicación y objetos de base de datos en las herramientas establecidas para tal fin. Documentar el código fuente desarrollado de acuerdo a las directivas y estándares establecidos.</li>
+                <li>Diseño, desarrollo, implementación y aseguramiento de proyectos de software, Sitios Web, Servicios
+                  Web (WS – WCF), API y Aplicaciones Mobiles, enfocados en la sistematización de las necesidades
+                  descritas en las historias de usuario asignadas a la cadena de valor.</li>
+                <li>Participar en la contextualización realizada por Gestión de la Demanda en la etapa de levantamiento
+                  de información, análisis integral y elaboración de requerimientos. </li>
+                <li>Generar propuestas de mejoras a los sistemas actuales teniendo en cuenta que se puedan integrar con
+                  otros existentes o ya desarrollados, a nivel Procesos, Macro procesos, Organización, Corporación y
+                  Clientes.</li>
+                <li>Documentar el diseño de sistemas con su respectiva definición de estructura, registros y demás
+                  estándares de diseño establecidos en la metodología de desarrollo de proyectos de software de
+                  SERVIENTREGA S.A.</li>
+                <li>Mantener al 100% bajo control el código fuente de las soluciones en las que participa a nivel de la
+                  aplicación y objetos de base de datos en las herramientas establecidas para tal fin. Documentar el
+                  código fuente desarrollado de acuerdo a las directivas y estándares establecidos.</li>
                 <h5>Implementación y Administración de Azure DevOps.</h5>
-                <li>Líder técnico en la implementación de la práctica de ingeniería de software DevOps y su administración en las cadenas de valor de desarrollo de software en la organización, asegurando código fuente, construyendo pipilenis de compilación y despliegue para las diferentes aplicaciones.</li>
+                <li>Líder técnico en la implementación de la práctica de ingeniería de software DevOps y su
+                  administración en las cadenas de valor de desarrollo de software en la organización, asegurando código
+                  fuente, construyendo pipilenis de compilación y despliegue para las diferentes aplicaciones.</li>
                 <h5>Soporte segundo nivel.</h5>
-                <li>Exigir la documentación requerida de los incidentes, problemas y peticiones escalados a través de las herramientas de mesa de Servicio definidas para soporte de segundo nivel.</li>
-                <li>Gestionar los incidentes, problemas y peticiones escalados a través de las herramientas de mesa de Servicio definidas documentado fechas de entrega a las diversas solicitudes.</li>
+                <li>Exigir la documentación requerida de los incidentes, problemas y peticiones escalados a través de
+                  las herramientas de mesa de Servicio definidas para soporte de segundo nivel.</li>
+                <li>Gestionar los incidentes, problemas y peticiones escalados a través de las herramientas de mesa de
+                  Servicio definidas documentado fechas de entrega a las diversas solicitudes.</li>
                 <h5>Aseguramiento y control de calidad.</h5>
-                <li>Cumplir con lo establecido en las líneas base de construcción de Software y/o Adquisición de soluciones llave en mano.</li>
-                <li>Administrar los ambientes de pruebas y preproducción de las diferentes aplicaciones y módulos asignados.</li>
-                <li>Cumplir con los indicadores de calidad definidos en el proceso de Virtualización y oficiales en Modelo S</li>
+                <li>Cumplir con lo establecido en las líneas base de construcción de Software y/o Adquisición de
+                  soluciones llave en mano.</li>
+                <li>Administrar los ambientes de pruebas y preproducción de las diferentes aplicaciones y módulos
+                  asignados.</li>
+                <li>Cumplir con los indicadores de calidad definidos en el proceso de Virtualización y oficiales en
+                  Modelo S</li>
                 <h5>Garantizar la disponibilidad de las aplicaciones.</h5>
-                <li>Apoyar en la disponibilidad de las aplicaciones realizando la instrumentación que permita supervisar o medir el nivel de rendimiento en los módulos y aplicaciones asignadas en el rol de Analista con el objetivo de diagnosticar errores.</li>
+                <li>Apoyar en la disponibilidad de las aplicaciones realizando la instrumentación que permita supervisar
+                  o medir el nivel de rendimiento en los módulos y aplicaciones asignadas en el rol de Analista con el
+                  objetivo de diagnosticar errores.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -362,11 +441,15 @@
               <p><em>COMERCIALIZADORA DE SERVICIOS FINANCIEROS BBVA </em></p>
               <ul>
                 <h5>Automatización de procesos a través del gestor de contenidos</h5>
-                <li>Desarrollo de módulos y automatización de procesos para la radicación y visualización de operaciones financieras.</li>
-                <li>Implementación y aseguramiento de desarrollos de software para la generación de módulos para la carga y extracción de información a través de sitios vía web.</li>
+                <li>Desarrollo de módulos y automatización de procesos para la radicación y visualización de operaciones
+                  financieras.</li>
+                <li>Implementación y aseguramiento de desarrollos de software para la generación de módulos para la
+                  carga y extracción de información a través de sitios vía web.</li>
                 <li>Desarrollo de Servicios Web (WS-WCF) Seguros para intercambio de información.</li>
-                <li>Desarrollo y diseño de pantallas, lógica y estructura del negocio para la gestión comercial de la fuerza de ventas.</li>
-                <li>Desarrollo, soporte y mantenimiento de paquetes de integración Extract, Transform and Load (ETL)</li>
+                <li>Desarrollo y diseño de pantallas, lógica y estructura del negocio para la gestión comercial de la
+                  fuerza de ventas.</li>
+                <li>Desarrollo, soporte y mantenimiento de paquetes de integración Extract, Transform and Load (ETL)
+                </li>
                 <li>Desarrollo, soporte y mantenimiento de procedimientos de Stored Procedure en Sql Server</li>
               </ul>
             </div>
@@ -375,14 +458,21 @@
               <h5>Mayo 2011 - Marzo 2015</h5>
               <p><em>ATH (A Toda Hora S.A.) </em></p>
               <ul>
-                <h5>Análisis y gestión de informes de BI (Inteligencia de Negocios) para alta gerencia en la herramienta Artus Web G6 sp0.92. </h5>
+                <h5>Análisis y gestión de informes de BI (Inteligencia de Negocios) para alta gerencia en la herramienta
+                  Artus Web G6 sp0.92. </h5>
                 <h5>Gestor de Configuraciones y Administración de la herramienta de gestión DBMS Service Manager.</h5>
-                <li>Depuración, segmentación y tratamiento de bases de datos para la medición del cumplimiento por gerencia sobre el comportamiento de PQRs, diseño, gestión y presentación de informes diarios, semanales y mensuales de indicadores de la operación de acuerdo a requerimientos.</li>
-                <li>Monitoreo e informes de calidad en el servicio tanto en la radicación como solución de PQR para retroalimentación y alertamientos oportunos a los líderes del proceso en ATH.</li>
-                <li>Realizar el Backup y configuración de la información depositada en el servidor de la herramienta Nice Query y CSupervisión.</li>
-                <li>Soporte Técnico Mesa de ayuda, mesa Cajeros Electrónicos grupo AVAL, brindar soporte técnico a  las entidades del grupo aval en los servicios de cajero automáticos, diagnostico, análisis, radicación y despacho a técnicos de incidentes relacionados con fallas en los cajeros electrónicos.</li>                
+                <li>Depuración, segmentación y tratamiento de bases de datos para la medición del cumplimiento por
+                  gerencia sobre el comportamiento de PQRs, diseño, gestión y presentación de informes diarios,
+                  semanales y mensuales de indicadores de la operación de acuerdo a requerimientos.</li>
+                <li>Monitoreo e informes de calidad en el servicio tanto en la radicación como solución de PQR para
+                  retroalimentación y alertamientos oportunos a los líderes del proceso en ATH.</li>
+                <li>Realizar el Backup y configuración de la información depositada en el servidor de la herramienta
+                  Nice Query y CSupervisión.</li>
+                <li>Soporte Técnico Mesa de ayuda, mesa Cajeros Electrónicos grupo AVAL, brindar soporte técnico a las
+                  entidades del grupo aval en los servicios de cajero automáticos, diagnostico, análisis, radicación y
+                  despacho a técnicos de incidentes relacionados con fallas en los cajeros electrónicos.</li>
               </ul>
-            </div>                          
+            </div>
           </div>
         </div>
 
@@ -394,7 +484,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portafolio</h2>
+          <h2> <p id="portfolioContent" > Portafolio </p></h2>
           <p>Algunos de los mas interesantes y divertidos proyectos experimentales y de aprendizaje autonomo.</p>
         </div>
 
@@ -402,9 +492,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <!--<li data-filter=".filter-card">Card</li>-->
+              <li data-filter=".filter-app">App</li>              
               <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-fotografo">Fotografo</li>
             </ul>
           </div>
         </div>
@@ -415,9 +505,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/YambaClient.PNG" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/YambaClient.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="YambaClient"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/YambaClient.PNG" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="YambaClient"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-yambaClient.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>YambaClient</em></h3></p>
+                <p>
+                <h3><em>YambaClient</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -426,9 +519,13 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ControlBiblotecario.PNG" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/ControlBiblotecario.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ControlBibliotecario"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details-controlBibliotecario.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>ControlBibliotecario</em></h3></p>
+                <a href="assets/img/portfolio/ControlBiblotecario.PNG" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="ControlBibliotecario"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-controlBibliotecario.html" title="More Details"><i
+                    class="bx bx-link"></i></a>
+                <p>
+                <h3><em>ControlBibliotecario</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -437,9 +534,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/familiasSeguras.PNG" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/familiasSeguras.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/familiasSeguras.PNG" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-familiasSeguras.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>FamiliasSeguras</em></h3></p>
+                <p>
+                <h3><em>FamiliasSeguras</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -448,9 +548,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/Encuentralo.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/Encuentralo.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/Encuentralo.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-encuentralo.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>Encuentralo!!!</em></h3></p>
+                <p>
+                <h3><em>Encuentralo!!!</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -459,9 +562,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/ServiceHome.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/ServiceHome.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/ServiceHome.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-serviceHome.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>ServiceHome</em></h3></p>
+                <p>
+                <h3><em>ServiceHome</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -470,9 +576,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/RazorPages.PNG" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/RazorPages.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/RazorPages.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-razorPagesLibrary.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>RazorPagesLibrary</em></h3></p>
+                <p>
+                <h3><em>RazorPagesLibrary</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -481,9 +590,26 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/inventory-Proyect.PNG" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/inventory-Proyect.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/inventory-Proyect.PNG" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details-inventory.html" title="More Details"><i class="bx bx-link"></i></a>
-                <p><h3><em>Inventory</em></h3></p>
+                <p>
+                <h3><em>Inventory</em></h3>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fotografo">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/KongoBar.JPG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/KongoBar.JPG" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details-KongoBar.html" title="More Details"><i class="bx bx-link"></i></a>
+                <p>
+                <h3><em>Inventory</em></h3>
+                </p>
               </div>
             </div>
           </div>
@@ -498,8 +624,10 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Servicios</h2>
-          <p>Como freelance he implementado proyectos de desarrollo, diseño y administración de paginas y servicios web, despliegue de proyectos en nube ,administración de datos y base de datos y mantenimiento de equipos de computo</p>
+          <h2> <p id="servicesContent" > Servicios </p></h2>
+          <p>Como freelance he implementado proyectos de desarrollo, diseño y administración de paginas y servicios web,
+            despliegue de proyectos en nube ,administración de datos y base de datos y mantenimiento de equipos de
+            computo</p>
         </div>
 
         <div class="row">
@@ -536,10 +664,10 @@
         </div>
 
       </div>
-      
+
     </section>
     <!-- End Services Section -->
-  
+
     <!-- ======= Testimonials Section ======= -->
 
     <!-- End Testimonials Section -->
@@ -549,7 +677,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contacto</h2>
+          <h2> <p id="contactContent" > Contacto </p></h2>
           <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
@@ -575,7 +703,10 @@
                 <p>+57 3183591891 - 0314822204</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.9798503772136!2d-74.18855109390195!3d4.59763224485851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1615691876700!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.9798503772136!2d-74.18855109390195!3d4.59763224485851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1615691876700!5m2!1ses-419!2sco"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""
+                loading="lazy"></iframe>
             </div>
 
           </div>
@@ -632,7 +763,8 @@
     </div>
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -649,5 +781,74 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
+
+<script>
+  // Create a function to change 
+  // the hash value of the page 
+  function changeLanguage(lang) {
+    location.hash = lang;     
+    location.reload();    
+    if(location.hash=='#eng'){      
+      document.getElementById('switchEng').style.display = 'none';
+     }else if(location.hash=='#es'){
+      // alert(document.getElementById('switchEs'));
+      // document.getElementById('switchEs').style.display = 'none ';
+     }        
+            
+  }
+
+  // Define the language reload anchors 
+  var language = {    
+    es: {
+      welcome: "Ingeniero de Software con amplia experiencia en la sistematización de procesos análisis, diseño, construcción e implementación de desarrollos de software FullStack, desarrollo de procedimientos de almacenado, Paquetes de integración (ETL), análisis de consultas Transact-SQL Server y Oracle y análisis de información BI, amplia capacidad de desempeño interdisciplinario en el campo tecnológico, administrativo y social, con fácil interpretación de las políticas organizacionales. Persona seria, de excelentes relaciones interpersonales y habilidad para trabajar en equipo o individualmente con alto grado de responsabilidad, interés por la actualización profesional."      
+    },
+    eng: {
+      welcome: "Software Engineer with extensive experience in the systematization of processes, analysis, design, construction and implementation of FullStack software developments, development of procedures stored, Integration Packages (ETL), Transact-SQL Server and Oracle query parsing and parsing information BI, broad capacity for interdisciplinary performance in the technological field, administrative and social, with easy interpretation of organizational policies. Serious person, with excellent interpersonal relationships and ability to work in a team or individually with a high degree of responsibility, interest in professional updating."
+    },
+    eng_title:{
+      about: "About",
+      about_description: "Web Developer .Net || FullStack Developer & Scrum Master Certified.",
+      tools: "Tools",
+      skills: "Skills",
+      worExp: "Work Experience",
+      portfolio: "Portfolio",
+      services: "Services",
+      contact: "Contact"
+    }
+    
+  };
+
+  // Check if a hash value exists in the URL 
+  if (window.location.hash) {
+
+    // Set the content of the webpage 
+    // depending on the hash value 
+    if (window.location.hash == "#eng") {
+        siteContent.textContent =
+        language.eng.welcome;      
+        aboutContent.textContent = language.eng_title.about;
+        aboutContent_description.textContent = language.eng_title.about_description;
+        toolsContent.textContent = language.eng_title.tools;
+        skillsContent.textContent = language.eng_title.skills;
+        workExpContent.textContent = language.eng_title.worExp;
+        portfolioContent.textContent = language.eng_title.portfolio;
+        servicesContent.textContent = language.eng_title.services;
+        contactContent.textContent = language.eng_title.contact;
+        document.getElementById("engVer").style.display = "none"; 
+        document.getElementById("switchEng").style.display = "none"; 
+        document.getElementById("switchEs").style.display = "block";         
+        document.getElementById("spaVer").style.display = "block"; 
+    }
+    else if (window.location.hash == "#es") {
+        siteContent.textContent =
+        language.es.welcome;
+        document.getElementById("switchEs").style.display = "none"; 
+        document.getElementById("switchEng").style.display = "block";
+        document.getElementById("spaVer").style.display = "none"; 
+        document.getElementById("engVer").style.display = "block";  
+    }
+  }
+</script>
 
 </html>
